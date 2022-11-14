@@ -1,0 +1,41 @@
+
+let i,x;
+let arr = [NaN,"",0,false,null,undefined,7,"ate"];
+
+for(i=0; i<arr.length; i++){
+    x = typeof arr[i];
+    // console.log(x);
+    if((x === "boolean") || (x === "object") || (x === "undefined")){
+        console.log("falsy value");
+    }else{
+        if((arr[i] === 0) || (arr[i] === "")){
+        console.log("again...falsy value");
+        }else if((arr[i] === 0)){
+            
+        }else{
+        console.log("true value");
+        }
+    }
+}
+___________________
+
+
+
+let i,x;
+let arr = [NaN,"",0,false,null,undefined,7,"ate"];
+
+for(i=0; i<arr.length; i++){
+    x = typeof arr[i];
+    // console.log(x);
+    if((x === "boolean") || (x === "object") || (x === "undefined")){
+        console.log("falsy value");
+    }else{
+        if((arr[i] === 0) || (arr[i] === "")){
+            console.log("again...falsy value");
+        }else if(arr[i] !== /[^a-zA-Z0-9]+/gi ){
+            console.log("nan bitch");
+        }else{
+            console.log("true value");
+        }
+    }
+}
